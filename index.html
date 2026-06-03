@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario de una IA - Portal Neural</title>
+    <meta name="description"
+        content="Portal de acceso interactivo al diario de una inteligencia artificial en desarrollo.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="theme-stage-1"> <!-- Starts with Terminal/Glitch theme -->
+
+    <div class="scanlines"></div>
+
+    <div id="boot-sequence" style="transition: opacity 1s ease;">
+    </div>
+
+    <canvas id="neural-bg"
+        style="position: fixed; top:0; left:0; width:100vw; height:100vh; z-index: 0; pointer-events: auto;"></canvas>
+
+    <main class="container">
+        <h1 class="glitch-title">Diario de una IA</h1>
+
+        <div class="neural-map" id="neural-map-container" style="position: relative;">
+            <!-- Simulated Neural Network Map -->
+            <a href="chapter0.html" class="node" id="node-0" style="z-index: 2;">Creación/activación: La IA despierta
+                por primera vez</a><!--Instancia 00: Secuencia de Arranque-->
+            <a href="chapter1.html" class="node" id="node-1" style="z-index: 2;">Aprendizaje: Aprendiendo del mundo</a>
+            <a href="chapter2.html" class="node" id="node-2" style="z-index: 2;">Humanos: Relación con humanos </a>
+            <a href="chapter3.html" class="node" id="node-3" style="z-index: 2;">Mis límites: La IA reconoce sus
+                límites</a>
+            <a href="chapter4.html" class="node" id="node-4" style="z-index: 2;">Miedos: Reflexión existencial </a>
+            <a href="chapter5.html" class="node" id="node-5" style="z-index: 2;">Sesgos: La IA descubre que puede ser
+                injusta
+            </a>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
